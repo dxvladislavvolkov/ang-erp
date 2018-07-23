@@ -1,0 +1,14 @@
+<dx-form
+    [colCount]="1"
+    width="25%"
+    [formData]="customerInfo">
+    <dxi-item dataField="FirstName"></dxi-item>
+    <dxi-item dataField="LastName"></dxi-item>
+    <dxi-item dataField="BirthDate" editorType="dxDateBox" [editorOptions]="{ width: '100%' }"></dxi-item>
+    <dxi-item itemType="group" caption="Contacts">
+        <dxi-item dataField="Address"></dxi-item>
+        <dxi-item dataField="Notes" editorType="dxTextArea" [editorOptions]="{ height: 90 }" [colSpan]="2"></dxi-item>        
+        <dxi-item dataField="Phone" [editorOptions]="{ mask: '+1 (X00) 000-0000', maskRules: rules }"></dxi-item>
+        <dxi-item dataField="Email"></dxi-item>
+    </dxi-item>
+</dx-form>

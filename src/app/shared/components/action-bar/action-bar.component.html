@@ -1,0 +1,30 @@
+<dx-toolbar>
+    <dxi-item 
+        location="after"
+        locateInMenu="auto"
+        widget="dxButton"
+        [options]="{
+            icon: 'refresh',
+            onClick: refreshData
+        }">
+    </dxi-item>
+    <dxi-item 
+        location="after"
+        locateInMenu="auto"
+        widget="dxButton"
+        [options]="{
+            icon: 'revert',
+            onClick: revert
+        }">
+    </dxi-item>
+    <dxi-item 
+        location="before"
+        locateInMenu="auto"
+        widget="dxButton"
+        [options]="{
+            icon: 'save',
+            text:'Save',
+            onClick: saveChanges
+        }">
+    </dxi-item>
+</dx-toolbar>
